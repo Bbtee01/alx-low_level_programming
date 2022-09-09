@@ -1,17 +1,16 @@
 #include <stdio.h>
-
 /**
  * main - entry point
  *
- * Return: return always 0
+ * Return: alway returns 0
  *
  */
 int main(void)
 {
-	int n;
+	int a = 0;
 
-	for(n = 0; n < 10; n++)
-		printf("%d", n);
-	printf('\n');
+	for (; a < 10 ; a++)
+		printf("%d", a);
+	putchar('\n');
 	return (0);
 }
