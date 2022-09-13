@@ -1,6 +1,5 @@
 #include <stdio.h>
 /**
- *
  * main - main function
  *
  * Return: nothing
@@ -25,6 +24,6 @@ int main(void)
 			printf(", ");
 		}
 	}
-	printf(", ");
+	printf("\n");
 	return (0);
 }
