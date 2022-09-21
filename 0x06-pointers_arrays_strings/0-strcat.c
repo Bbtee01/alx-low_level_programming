@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * _strcat - concats two arrays
  * 
@@ -13,7 +14,7 @@ char *_strcat(char *dest, char *src)
 	int j;
 
 	for (j = 0; dest[j] != '\0'; j++)
-	{}
+	i{}
 
 	for (i = 0; src[i] != '\0'; i++)
 	{
@@ -22,6 +23,5 @@ char *_strcat(char *dest, char *src)
 	dest[j + i] = '\0';
 
 	return (dest);
-
 }
 
