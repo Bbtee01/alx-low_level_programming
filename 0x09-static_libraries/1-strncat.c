@@ -1,23 +1,27 @@
-#include "main.h"
-
+#include "holberton.h"
 /**
- * _strncat - Concatenates certain bytes of 2 given strings
- * @dest: pointer referencing the destination string
- * @src: pointer referencing the source string
- * @n: number of bytes to pick
- * Return: void
+ * _strncat - concats two arrays
+ *
+ * @dest: destination of concat
+ * @src: source array to concat
+ * @n: amount of times to append
+ *
+ * Return: char value
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int count, i;
+	int i;
+	int j;
 
-	for (count = 0; dest[count] != '\0'; count++)
-	;
+	for (j = 0; dest[j] != '\0'; j++)
+	{}
 
 	for (i = 0; i < n && src[i] != '\0'; i++)
-		dest[count + i] = src[i];
-
-	dest[count + i] = '\0';
+	{
+		dest[j + i] = src[i];
+	}
+	dest[j + i] = '\0';
 
 	return (dest);
+
 }
