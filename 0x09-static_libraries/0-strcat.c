@@ -1,7 +1,7 @@
-#include "holberton.h"
+#include "main.h"
+
 /**
  * _strcat - concats two arrays
- *
  * @dest: destination of concat
  * @src: source array to concat
  *

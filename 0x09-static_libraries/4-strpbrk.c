@@ -1,27 +1,19 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * _strpbrk - locates the first occurrrence of a string
- * @s: char pointer
- * @accept: char pointer
- * Return: Null or Returns a pointer to the byte found
+ * _strpbrk - finds first matching char in string
+ * @s: input string to search for matching char
+ * @accept: characters that could be matched
+ * Return: pointer to matching char
  */
+
 char *_strpbrk(char *s, char *accept)
 {
-	int count;
+	unsigned int i, j;
 
-	while (*s)
-	{
-		for (count = 0; accept[count]; count++)
-		{
-			if (*s == accept[count])
-			{
-				return (s);
-			}
-		}
-		s++;
-	}
-
-	return (NULL);
+	for (i = 0; s[i] != '\0'; i++)
+		for (j = 0; accept[j] != '\0'; j++)
+			if (s[i] == accept[j])
+				goto exit;
+exit: return (s[i] != '\0' ? s + i : '\0');
 }
